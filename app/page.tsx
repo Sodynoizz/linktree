@@ -22,7 +22,7 @@ interface Social {
   title: string;
 }
 
-const biotext = `<div style="text-align: center;">${data.name}</div><span style="font-weight: normal; margin-top: 1px;">${data.bio}</span>`;
+const biotext = `<div style="text-align: center;">${data.name}</div><span style="font-weight: normal; margin-top: 1px; font-size: 15px;">${data.bio}</span>`;
 
 export default async function HomePage() {
   return (
