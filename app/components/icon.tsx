@@ -7,7 +7,7 @@ import {
   faDiscord,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
-import "../styles/animation.css";
+import "../../styles/animation.css";
 
 export function GitHubIcon() {
   return (
