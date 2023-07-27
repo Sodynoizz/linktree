@@ -42,7 +42,7 @@ export default async function HomePage() {
           />
           <h1 className="mt-4 mb-7 text-xl color-slate-500">
             <div className="font-bold mb-2 text-center">{data.name}</div>
-            <div>{data.bio}</div>
+            <div className="text-base">{data.bio}</div>
           </h1>
           <div className="flex items-center gap-4 mb-3.5 text-white">
             {data.links.map((link) => (
