@@ -3,15 +3,14 @@
 @tailwind utilities;
 
 body {
-  height: 60vh;
   background-color: black;
 }
 
 video {
   width: 100%;
-  height: 120vh;
+  height: auto;
   object-fit: cover;
-  filter: blur(3px);
+  filter: saturate(1.2)
 }
 
 .content {
@@ -30,6 +29,6 @@ video {
     width: 100%;
     height: 100vh;
     object-fit: cover;
-    filter: blur(3px);
+    filter: saturate(1.2);
   }
 }
