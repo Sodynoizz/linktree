@@ -29,12 +29,13 @@ const biotext = `<div style="text-align: center;">${data.name}</div><span style=
 export default async function HomePage() {
   return (
     <div className="main">
-      <video src="https://i.imgur.com/NM6Wtqz.mp4" autoPlay loop muted />
+      <div className="background"></div>
+      {/* <Image alt="gradient background" src="https://i.imgur.com/Lv4al5n.gif" width="1280" height="1080"/> */}
       <div className="content">
         <div className="flex items-center flex-col mx-auto w-full justify-center mt-16 px-8">
           <Image
             priority
-            className="rounded-full"
+            className="profile rounded-full"
             alt={data.name}
             src={data.avatar}
             width={100}
