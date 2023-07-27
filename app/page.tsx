@@ -24,22 +24,21 @@ interface Social {
   title: string;
 }
 
-const biotext = `<div style="text-align: center;">${data.name}</div><span style="font-weight: normal; margin-top: 1px; font-size: 15px;">${data.bio}</span>`;
+const biotext = `<div>${data.name}</div><span style="font-weight: normal; margin-top: 1px; font-size: 15px;">${data.bio}</span>`;
 
 export default async function HomePage() {
   return (
     <div className="main">
       <div className="background"></div>
-      {/* <Image alt="gradient background" src="https://i.imgur.com/Lv4al5n.gif" width="1280" height="1080"/> */}
       <div className="content">
-        <div className="flex items-center flex-col mx-auto w-full justify-center mt-16 px-8">
+        <div className="card">
           <Image
             priority
             className="profile rounded-full"
             alt={data.name}
             src={data.avatar}
-            width={100}
-            height={100}
+            width={125}
+            height={125}
           />
           <h1
             className="font-bold mt-4 mb-7 text-xl text-white"
@@ -75,6 +74,6 @@ export default async function HomePage() {
           ))}
         </div>
       </div>
-      </div>
+    </div>
   );
 }
