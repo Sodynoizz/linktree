@@ -29,7 +29,7 @@ const biotext = `<div style="text-align: center;">${data.name}</div><span style=
 export default async function HomePage() {
   return (
     <div className="main">
-      <video src="https://i.imgur.com/NM6Wtqz.mp4" autoPlay loop muted/>
+      <video src="https://i.imgur.com/NM6Wtqz.mp4" autoPlay loop muted />
       <div className="content">
         <div className="flex items-center flex-col mx-auto w-full justify-center mt-16 px-8">
           <Image
