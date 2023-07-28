@@ -4,7 +4,6 @@
   "iis.configDir": "",
   "spellright.language": [],
   "spellright.documentTypes": [
-    "latex",
-    "plaintext"
+    "latex"
   ]
 }

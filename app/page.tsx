@@ -8,6 +8,7 @@ import {
   NglIcon,
 } from "./components/icon";
 import { LinkCard } from "./components/card";
+import TypewriterComponent from "./components/typinganimation";
 import data from "../data.json";
 
 export const dynamic = "force-dynamic",
@@ -34,16 +35,22 @@ export default async function HomePage() {
         <div className="card">
           <Image
             priority
-            className="profile rounded-full"
+            className="rounded-full"
             alt={data.name}
             src={data.avatar}
-            width={125}
-            height={125}
+            width={150}
+            height={150}
           />
-          <h1 className="mt-4 mb-7 text-xl color-slate-500">
-            <div className="font-bold mb-2 text-center">{data.name}</div>
-            <div className="text-base">{data.bio}</div>
-          </h1>
+          <div>
+            <h1 className="mt-4 mb-7 text-xl color-slate-500">
+              <div className="font-bold mb-2 text-center">
+                <span>
+                  <TypewriterComponent data={data}/>
+                </span>
+              </div>
+              <div className="text-base">{data.bio}</div>
+            </h1>
+          </div>
           <div className="flex items-center gap-4 mb-3.5 text-white">
             {data.links.map((link) => (
               <a
