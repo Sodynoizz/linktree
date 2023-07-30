@@ -3,7 +3,7 @@ export default function Head() {
     <>
       <title>Sodynoizz</title>
       <meta name="description" content="Sodynoizz Linktree" />
-      <link rel="icon" type="image/x-icon" href="/assets/icon.png" />
+      <link rel="icon" type="image/x-icon" href="https://i.imgur.com/7Zm3A3h.png" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="theme-color" content="#cf1bbe"/>
       <meta name="og:image" content="https://i.imgur.com/Lyxl04B.png" />
